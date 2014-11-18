@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+  
+  <title>Bad Robot Design - {{page.title}}</title>
+  <meta name="description" content="Bad Robot Design: user experience design consultancy">
+  <meta name="keywords" content="user experience design, UX designer, freelance, portfolio, UX, London">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  <link href="../../css/styles.css" rel="stylesheet">
+  
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34673276-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>    
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+	  <div class="navbar-header">
+	  	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="../../index.html"><img src="../../images/logo-tiny.png" alt="logo-smallest" />  Bad Robot Design</a>
+	  </div>
+	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <ul class="nav navbar-nav">
+      <li {% if page.nav == "home" %} class="active"{% endif %}><a href="../../index.html">Home</a></li>
+      <li class="divider"></li>
+      <li {% if page.nav == "badrobots" %} class="active"{% endif %}><a href="../../badrobots.html">Meet Me</a></li>
+      <li class="divider"></li>
+      <li {% if page.nav == "make" %} class="active"{% endif %}><a href="../../make.html">Work</a></li>
+      <li class="divider"></li>
+      <li {% if page.nav == "play" %} class="active"{% endif %}><a href="../../play.html">Play</a></li>
+      <li class="divider"></li>
+      <li {% if page.nav == "happy" %} class="active"{% endif %}><a href="../../happy.html">Happy</a></li>
+      <li class="divider"></li>
+      <li {% if page.nav == "blog" %} class="active"{% endif %}><a href="http://blog.badrobotdesign.com/">Blog</a></li>
+	    </ul>
+	  </div><!-- /.navbar-collapse -->
+	</nav>
+
+<div class="wrapper">  
+  <div class="container">
+    <a name="top"></a>
+    <div class="row">
+      <div class="col-md-12 header">
+        <h1>Bad Robot</h1>
+      </div>
+    </div>
+    
+    {{ content }}
+    
+    </div>
+  </div>
+  
+  <div id="footer">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <h2>Get in touch!</h2>
+          <p><img src="/../images/email.png" alt="mail" width="20" height="20" /> <a href="mailto:hello@badrobotdesign.com?Subject=Hello">hello@badrobotdesign.com</a></p>
+          <p><img src="/../images/facebook.png" alt="facebook" width="20" height="20"/> <a href="http://facebook.com/wearebadrobotdesign" target="_blank">wearebadrobotdesign</a></p>
+          <p><img src="/../images/twitter.png" alt="twitter" width="20" height="20"/> <a href="http://twitter.com/badrobotHQ" target="_blank">@BadRobotHQ</a></p>
+        </div>
+        <div class="col-md-9">
+          <h2>Copyright &copy; 2012-2013, Bad Robot Design Ltd</h3>
+          <p>Company Registration Number: 8079562<br> Registered in England &amp; Wales<br>Registered Office Address: Unit 11, Hove Business Centre, Fonthill Road, Hove, BN3 6HA</p>
+        </div>
+      </div>
+    </div>  
+  </div>
+  -
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+  </script>
+  
+</body>
+</html>
