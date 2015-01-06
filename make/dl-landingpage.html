@@ -1,8 +1,66 @@
----
-layout: portfolio-page
-title: Project: Inspirational landing page
-nav: make
----
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+  
+  <title>Luisa Gottardo - {{page.title}}</title>
+  <meta name="description" content="Bad Robot Design: user experience design consultancy">
+  <meta name="keywords" content="user experience design, UX designer, freelance, portfolio, UX, London">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  <link href="css/styles.css" rel="stylesheet">
+  
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  
+  <meta property="og:title" content="Luisa Gottardo: Copywriter"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://luisagottardo.co.uk"/>
+  <meta property="og:image" content="http://badrobotdesign.com/images/logo-1.png"/>
+  <meta property="og:site_name" content="Luisa Gottardo"/>
+  <meta property="og:description" content="Luisa writes amazing copy"/> 
+  
+  <link rel="icon" type="image/png" href="../favicon.png" />
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="navbar-header">
+  	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html"><img src="../images/luisa-logo-tiny.png" alt="logo-smallest" /></a>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li {% if page.nav == "home" %} class="active"{% endif %}><a href="../index.html">Home</a></li>
+      <li class="divider"></li>
+      <li {% if page.nav == "meetme" %} class="active"{% endif %}><a href="../aboutluisa.html">Meet Me</a></li>
+      <li class="divider"></li>
+      <li {% if page.nav == "make" %} class="active"{% endif %}><a href="../make.html">Work</a></li>
+      <li class="divider"></li>
+      <li {% if page.nav == "happy" %} class="active"{% endif %}><a href="../happy.html">Happy Clients</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="wrapper">
+    <div class="container">
+      <div class="row">
+      <h1>Luisa Gottardo</h1>
+      </div>
 
 <div class="row intro">
   <div class="col-md-12">
@@ -15,7 +73,7 @@ nav: make
               <div class="col-md-2 about-left">
                 <p>I was asked to create, design and write a landing page which would present our inspirational members to all site users. This was achieved in a tight deadline of under 3 hours.</p>
                 <div class="hidden-xs hidden-sm">
-                	<img src="images/work/dl-insp-lp.jpg" class="img-responsive"/>
+                	<img src="../images/work/dl-insp-lp.jpg" class="img-responsive"/>
                 </div>
               </div>       
             </div>
@@ -24,3 +82,39 @@ nav: make
     </div>   
   </div>
 </div>
+
+</div>
+  </div>
+  
+  <div id="footer">
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-md-3">
+      <h2>Get in touch!</h2>
+      <p><img src="../images/email.png" alt="mail" width="20" height="20" /> <a href="mailto:luisagottardo@btinternet.com?Subject=Hello">luisagottardo@btinternet.com</a></p>
+      <p><img src="../images/linkedin.png" alt="facebook" width="20" height="20"/> <a href="http://uk.linkedin.com/pub/luisa-gottardo/15/178/ab4/" target="_blank">On LinkedIn</a></p>
+      <p><img src="../images/twitter.png" alt="twitter" width="20" height="20"/> <a href="http://twitter.com/lu1820" target="_blank">@lu1820</a></p>
+    </div>
+    <div class="col-md-9">
+      <h2>Copyright &copy; 2014 Luisa Gottardo</h3>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+	</script>
+  
+  <script type="text/javascript">
+    $('#navbar').scrollspy()
+  </script>
+</body>
+</html>
