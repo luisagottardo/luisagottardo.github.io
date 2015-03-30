@@ -1,5 +1,5 @@
 body {
-  background-color: #2F63C8;
+  background-color: #2e61c7;
   color: #333;
 }
 
@@ -325,4 +325,8 @@ blockquote p {
 
 .logo-row-two {
 	margin-top: 5%;
+}
+
+.jumbotron {
+	background-color: #ffffff;
 }
